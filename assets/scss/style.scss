@@ -1,3 +1,6 @@
+/* Globals */
+
+/* colors */
 $primary-color: #0a78cc;
 $white: #fff;
 $light-white: #f4f4f4;
@@ -5,7 +8,11 @@ $light-primary-color: #f973007d;
 $icon-color: #ef2e1c;
 $heart-icon-color: #961004;
 
+/* Fonts*/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&family=Rubik:wght@500&display=swap");
+
+/* Base structure */
 
 body {
     padding: 0;
@@ -28,13 +35,18 @@ p {
     font-family: "Roboto", sans-serif;
 }
 
+/* Navigation */
+
 navbar-brand {
     font-family: "Rubik", sans-serif;
 }
+
 .navbar-brand > img {
-    border-radius: 4rem;
-    width: 1.8rem;
-    margin-right: 0.2rem;
+     border-radius: .2rem;
+
+    width: 7rem;
+    // margin-right: 0.2rem;
+    // margin-bottom: 0.35rem;
 }
 
 @media (max-width: 768px) {
@@ -65,7 +77,14 @@ navbar-brand {
     background: $white !important;
 }
 
-/* header style */
+/* Scroll spy class*/
+.navbar-custom .nav-item > .active {
+    background: $light-white !important;
+    color: $primary-color !important;
+    // border-bottom:5px solid $light-white !important;
+}
+
+/*  header */
 
 .header {
     height: 100vh;
@@ -92,7 +111,7 @@ navbar-brand {
     padding: 2rem;
 }
 
-.description h1 {
+.description h1, h2 {
     color: $primary-color;
 }
 .description p {
@@ -107,6 +126,8 @@ navbar-brand {
     background: $primary-color;
     color: $white;
 }
+/* About */
+
 .about {
     margin: 4rem 0;
     padding: 1rem;
@@ -138,6 +159,8 @@ navbar-brand {
     line-height: 2;
     color: #888;
 }
+/* Services */
+
 .services {
     margin: 4rem 0;
     position: relative;
@@ -148,7 +171,7 @@ navbar-brand {
     margin: 2rem;
 }
 
-// Icon blocks
+/* Icon blocks */
 .block-icon-left {
     overflow: auto;
     h1,
@@ -175,6 +198,7 @@ navbar-brand {
 .icon-color {
     color: $icon-color;
 }
+/* projects */
 
 .projects {
     margin: 4rem 0;
@@ -190,7 +214,7 @@ navbar-brand {
 }
 .projects .card img {
     width: 100%;
-    height: 12rem;
+    height: 18rem;
 }
 
 .projects .card-title {
@@ -199,6 +223,7 @@ navbar-brand {
 .projects .card-body {
     padding: 1rem;
 }
+/* Contact */
 
 .contact-form {
     margin: 6rem 0;
@@ -223,6 +248,7 @@ navbar-brand {
 }
 .contact-text {
     color: $primary-color;
+    margin-left: 1rem;
 }
 
 .heart-icon {
@@ -236,6 +262,8 @@ navbar-brand {
         background-image: 100%;
     }
 }
+/* footer */
+
 footer {
     background: $primary-color;
     color: #fff;
