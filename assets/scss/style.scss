@@ -5,8 +5,7 @@ $primary-color: #0a78cc;
 $white: #fff;
 $light-white: #f4f4f4;
 $light-primary-color: #f973007d;
-$icon-color: #ef2e1c;
-$heart-icon-color: #961004;
+$background-color:#f4f4f4;
 
 /* Fonts*/
 
@@ -17,7 +16,7 @@ $heart-icon-color: #961004;
 body {
     padding: 0;
     margin: 0;
-    background: #f4f4f4;
+    background: $background-color;
 }
 
 html,
@@ -30,6 +29,11 @@ h6,
 a {
     font-family: "Roboto Slab", serif;
 }
+
+h6 {
+    color:$primary-color;
+}
+
 
 p {
     font-family: "Roboto", sans-serif;
@@ -56,19 +60,20 @@ navbar-brand {
 }
 
 .navbar {
-    background: $primary-color;
+    //background: $primary-color;
+    background: $background-color;
 }
 .nav-link,
 .navbar-brand {
-    color: $light-white !important;
+    color: $primary-color !important;
     cursor: pointer;
 }
 .nav-link {
     margin-left: 1rem !important;
 }
 .nav-link:hover {
-    background: $light-white !important;
-    color: $primary-color !important;
+    background: $primary-color !important;
+    color: $light-white !important;
 }
 .navbar-collapse {
     justify-content: flex-end;
@@ -79,8 +84,8 @@ navbar-brand {
 
 /* Scroll spy class*/
 .navbar-custom .nav-item > .active {
-    background: $light-white !important;
-    color: $primary-color !important;
+    background: $primary-color !important;
+    color: $light-white !important;
     // border-bottom:5px solid $light-white !important;
 }
 
@@ -111,7 +116,7 @@ navbar-brand {
     padding: 2rem;
 }
 
-.description h1, h2 {
+.description h1 {
     color: $primary-color;
 }
 .description p {
@@ -196,7 +201,7 @@ navbar-brand {
 }
 
 .icon-color {
-    color: $icon-color;
+//    color: $icon-color;
 }
 /* projects */
 
@@ -251,8 +256,9 @@ navbar-brand {
     margin-left: 1rem;
 }
 
-.heart-icon {
-    color: $heart-icon-color;
+.heart-icon  {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 @media (max-width: 500px) {
@@ -266,8 +272,12 @@ navbar-brand {
 
 footer {
     background: $primary-color;
-    color: #fff;
+    color: $white;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+
+
+
