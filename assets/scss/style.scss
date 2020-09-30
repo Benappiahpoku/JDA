@@ -61,7 +61,7 @@ navbar-brand {
 
 .navbar {
     //background: $primary-color;
-    background: $background-color;
+    background: $white;
 }
 .nav-link,
 .navbar-brand {
@@ -79,7 +79,7 @@ navbar-brand {
     justify-content: flex-end;
 }
 .navbar-toggler {
-    background: $white !important;
+    background: $primary-color !important;
 }
 
 /* Scroll spy class*/
@@ -100,14 +100,13 @@ navbar-brand {
     background-repeat: no-repeat;
 }
 
-.overlay {
-    position: absolute;
-    min-height: 110%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(244, 244, 244, 0.65);
-}
+
+//     min-height: 110%;
+//     min-width: 100%;
+//     left: 0;
+//     top: 0;
+//     background: rgba(244, 244, 244, 0.65);
+// }
 
 .description {
     position: absolute;
@@ -117,7 +116,7 @@ navbar-brand {
 }
 
 .description h1 {
-    color: $primary-color;
+    color: $white;
 }
 .description p {
     color: #666;
