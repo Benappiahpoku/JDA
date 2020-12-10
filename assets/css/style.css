@@ -1,4 +1,8 @@
+/* Globals */
+/* colors */
+/* Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&family=Rubik:wght@500&display=swap");
+/* Base structure */
 body {
   padding: 0;
   margin: 0;
@@ -16,21 +20,37 @@ a {
   font-family: "Roboto Slab", serif;
 }
 
+h6 {
+  color: #0a78cc;
+}
+
 p {
   font-family: "Roboto", sans-serif;
 }
 
+/* Navigation */
 navbar-brand {
   font-family: "Rubik", sans-serif;
 }
 
+.navbar-brand > img {
+  border-radius: .2rem;
+  width: 7rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 70vw !important;
+  }
+}
+
 .navbar {
-  background: #0a78cc;
+  background: #fff;
 }
 
 .nav-link,
 .navbar-brand {
-  color: #f4f4f4 !important;
+  color: #0a78cc !important;
   cursor: pointer;
 }
 
@@ -39,8 +59,8 @@ navbar-brand {
 }
 
 .nav-link:hover {
-  background: #f4f4f4 !important;
-  color: #0a78cc !important;
+  background: #0a78cc !important;
+  color: #f4f4f4 !important;
 }
 
 .navbar-collapse {
@@ -48,36 +68,34 @@ navbar-brand {
 }
 
 .navbar-toggler {
-  background: #fff !important;
+  background: #0a78cc !important;
 }
 
-/* header style */
+/* Scroll spy class*/
+.navbar-custom .nav-item > .active {
+  background: #0a78cc !important;
+  color: #f4f4f4 !important;
+}
+
+/*  header */
 .header {
-  position: relative;
-  background-image: url("../img/main.jpg");
-  background-attachment: fixed;
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("../img/main-s2.jpg");
   background-size: cover;
   background-position: center;
-}
-
-.overlay {
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(244, 244, 244, 0.68);
+  background-repeat: no-repeat;
 }
 
 .description {
   position: absolute;
-  top: 40%;
+  top: 30%;
   margin: auto;
   padding: 2rem;
 }
 
 .description h1 {
-  color: #0a78cc;
+  color: #fff;
 }
 
 .description p {
@@ -92,6 +110,7 @@ navbar-brand {
   color: #fff;
 }
 
+/* About */
 .about {
   margin: 4rem 0;
   padding: 1rem;
@@ -130,6 +149,7 @@ navbar-brand {
   color: #888;
 }
 
+/* Services */
 .services {
   margin: 4rem 0;
   position: relative;
@@ -140,6 +160,7 @@ navbar-brand {
   margin: 2rem;
 }
 
+/* Icon blocks */
 .block-icon-left {
   overflow: auto;
 }
@@ -166,10 +187,7 @@ navbar-brand {
   margin-top: 0.75rem;
 }
 
-.icon-color {
-  color: #ef2e1c;
-}
-
+/* projects */
 .projects {
   margin: 4rem 0;
   position: relative;
@@ -187,7 +205,7 @@ navbar-brand {
 
 .projects .card img {
   width: 100%;
-  height: 12rem;
+  height: 18rem;
 }
 
 .projects .card-title {
@@ -198,6 +216,7 @@ navbar-brand {
   padding: 1rem;
 }
 
+/* Contact */
 .contact-form {
   margin: 6rem 0;
   position: relative;
@@ -225,12 +244,23 @@ navbar-brand {
 
 .contact-text {
   color: #0a78cc;
+  margin-left: 1rem;
 }
 
 .heart-icon {
-  color: #961004;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
+@media (max-width: 500px) {
+  .header {
+    width: auto;
+    height: auto;
+    background-image: 100%;
+  }
+}
+
+/* footer */
 footer {
   background: #0a78cc;
   color: #fff;
